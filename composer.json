@@ -1,0 +1,33 @@
+{
+    "name": "eloquent/phony-benchmarks",
+    "description": "Benchmarks for Phony.",
+    "keywords": ["phony", "benchmarks"],
+    "homepage": "https://github.com/eloquent/phony-benchmarks",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Erin Millard",
+            "email": "ezzatron@gmail.com",
+            "homepage": "http://ezzatron.com/"
+        }
+    ],
+    "require": {
+        "php": ">=5.3",
+        "athletic/athletic": "^0.1",
+        "eloquent/phony": "dev-master",
+        "errors/exceptions": "dev-master",
+        "friendsofphp/php-cs-fixer": "1.11.4",
+        "icecave/isolator": "^3",
+        "mockery/mockery": "^0.9",
+        "phake/phake": "^2",
+        "phpdocumentor/reflection-docblock": "^2",
+        "phpspec/prophecy": "^1",
+        "phpunit/phpunit": "^4",
+        "simpletest/simpletest": "^1"
+    },
+    "autoload": {
+        "psr-4": {
+            "Eloquent\\Phony\\": ["benchmarks"]
+        }
+    }
+}
