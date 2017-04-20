@@ -18,4 +18,4 @@ install:
 
 test_script:
   - cd C:\projects\phony
-  - vendor/bin/phpunit --no-coverage
+  - vendor/bin/athletic -p benchmarks
