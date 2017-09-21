@@ -15,13 +15,15 @@
         "php": ">=7.0",
         "eloquent/phony": "dev-php72",
         "errors/exceptions": "^0.2",
-        "friendsofphp/php-cs-fixer": "^2",
         "icecave/isolator": "^3",
         "mockery/mockery": "^0.9",
         "phake/phake": "^3",
         "phpbench/phpbench": "^0.13",
         "phpspec/prophecy": "^1",
         "phpunit/phpunit": "^6"
+    },
+    "require-dev": {
+        "friendsofphp/php-cs-fixer": "^2"
     },
     "autoload": {
         "psr-4": {
