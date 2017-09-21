@@ -1,0 +1,6 @@
+{
+    "bootstrap": "vendor/autoload.php",
+    "php_config": {
+        "memory_limit": "1G"
+    }
+}

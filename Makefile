@@ -1,15 +1,11 @@
+.PHONY: benchmarks
 benchmarks: install
-	vendor/bin/athletic -p benchmarks
+	bin/run
 
+.PHONY: lint
 lint: install
 	vendor/bin/php-cs-fixer fix
 
-install: vendor/autoload.php
-
-.PHONY: benchmarks lint install
-
-vendor/autoload.php: composer.lock
+.PHONY: install
+install:
 	composer install
-
-composer.lock: composer.json
-	composer update

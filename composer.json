@@ -12,22 +12,20 @@
         }
     ],
     "require": {
-        "php": ">=5.3",
-        "athletic/athletic": "^0.1",
-        "eloquent/phony": "dev-master",
-        "errors/exceptions": "dev-master",
-        "friendsofphp/php-cs-fixer": "1.11.4",
+        "php": ">=7.0",
+        "eloquent/phony": "dev-php72",
+        "errors/exceptions": "^0.2",
+        "friendsofphp/php-cs-fixer": "^2",
         "icecave/isolator": "^3",
         "mockery/mockery": "^0.9",
-        "phake/phake": "^2",
-        "phpdocumentor/reflection-docblock": "^2",
+        "phake/phake": "^3",
+        "phpbench/phpbench": "^0.13",
         "phpspec/prophecy": "^1",
-        "phpunit/phpunit": "^4",
-        "simpletest/simpletest": "^1"
+        "phpunit/phpunit": "^6"
     },
     "autoload": {
         "psr-4": {
-            "Eloquent\\Phony\\": ["benchmarks"]
+            "Eloquent\\Phony\\Benchmarks\\": ["benchmarks", "src"]
         }
     }
 }
