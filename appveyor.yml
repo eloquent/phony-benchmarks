@@ -22,4 +22,6 @@ install:
 
 test_script:
   - cd C:\projects\eloquent
-  - bin/run
+  - vendor/bin/phpbench run benchmarks/FullMockBench.php --report aggregate
+  - vendor/bin/phpbench run benchmarks/PartialMockBench.php --report aggregate
+  - vendor/bin/phpbench run benchmarks/LargeClassBench.php --report aggregate
