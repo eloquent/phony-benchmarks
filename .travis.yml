@@ -13,8 +13,8 @@ matrix:
 before_install:
     - phpenv config-rm xdebug.ini || true
     - composer config --global github-oauth.github.com $GITHUB_TOKEN
-install: composer install --prefer-dist --no-progress --no-interaction --no-dev
-script: bin/run
+install: composer install --prefer-dist --no-progress --no-interaction
+script: make benchmarks
 
 env:
     global:
