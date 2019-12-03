@@ -12,24 +12,19 @@
         }
     ],
     "require": {
-        "php": ">=7.0",
-        "eloquent/phony": "^2",
+        "php": ">=7.2",
+        "eloquent/code-style": "^1",
+        "eloquent/phony": "^3",
         "errors/exceptions": "^0.2",
         "icecave/isolator": "^3",
-        "mockery/mockery": "^0.9",
+        "mockery/mockery": "^1",
         "phake/phake": "^3",
-        "phpbench/phpbench": "^0.13",
-        "phpspec/prophecy": "^1",
-        "phpunit/phpunit": "^6"
+        "phpbench/phpbench": "^0.16",
+        "phpspec/prophecy": "^1"
     },
     "autoload": {
         "psr-4": {
             "Eloquent\\Phony\\Benchmarks\\": ["benchmarks", "src"]
-        }
-    },
-    "config": {
-        "platform": {
-            "php": "7.0.99999"
         }
     }
 }

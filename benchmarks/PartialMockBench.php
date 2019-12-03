@@ -7,8 +7,6 @@ namespace Eloquent\Phony\Benchmarks;
 use Eloquent\Phony;
 use Mockery;
 use Phake;
-use PHPUnit\Framework\TestCase;
-use PHPUnit_Framework_MockObject_Generator;
 use stdClass;
 
 /**
@@ -23,12 +21,9 @@ class PartialMockBench
         $this->className = TypicalClass::class;
         class_exists($this->className);
 
-        $this->phpunit = new PHPUnit_Framework_MockObject_Generator();
-
         Mockery::mock(stdClass::class);
         Phake::mock(stdClass::class);
         Phony\mock(stdClass::class);
-        $mock = $this->phpunit->getMock(stdClass::class);
     }
 
     public function benchMockery()
@@ -52,12 +47,5 @@ class PartialMockBench
         $handle->testClassAMethodA->with('a', 'b')->returns('c');
         $handle->get()->testClassAMethodA('a', 'b');
         $handle->testClassAMethodA->calledWith('a', 'b');
-    }
-
-    public function benchPhpunit()
-    {
-        $mock = $this->phpunit->getMock($this->className, ['testClassAMethodA']);
-        $mock->expects(TestCase::once())->method('testClassAMethodA')->with('a', 'b')->willReturn('c');
-        $mock->testClassAMethodA('a', 'b');
     }
 }
