@@ -1,1 +1,4 @@
+/.makefiles/
+/artifacts/
+/composer.lock
 /vendor/
