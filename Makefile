@@ -6,7 +6,9 @@
 .makefiles/%:
 	@curl -sfL https://makefiles.dev/v1 | bash /dev/stdin "$@"
 
-################################################################################
+#################################################################################
+
+.DEFAULT_GOAL := benchmarks
 
 .PHONY: benchmarks
 benchmarks: vendor $(PHP_SOURCE_FILES)
