@@ -14,7 +14,7 @@
     "require": {
         "php": ">=7.2",
         "eloquent/code-style": "^1",
-        "eloquent/phony": "^3",
+        "eloquent/phony": "^4",
         "errors/exceptions": "^0.2",
         "icecave/isolator": "^3",
         "mockery/mockery": "^1",
